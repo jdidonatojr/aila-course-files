@@ -683,5 +683,46 @@
         "startSlide": 78
       }
     ]
+  },
+  "21": {
+    "id": "connecting_business_goals_to_people_solutions",
+    "title": "Connecting Business Goals to People Solutions",
+    "totalSlides": 78,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/aila-course-files/main/Connecting-Business-Goals-to-People-Solutions.pdf",
+    "firstMessage": "Welcome to Connecting Business Goals to People Solutions. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Course Foundation (slides 1-10)",
+        "startSlide": 1
+      },
+      {
+        "label": "Module 1: Reading Business Strategy (slides 11-20)",
+        "startSlide": 11
+      },
+      {
+        "label": "Module 2: Diagnosing People Gaps (slides 21-30)",
+        "startSlide": 21
+      },
+      {
+        "label": "Module 3: Designing People Solutions (slides 31-41)",
+        "startSlide": 31
+      },
+      {
+        "label": "Module 4: Operationalizing with AI (slides 42-51)",
+        "startSlide": 42
+      },
+      {
+        "label": "Module 5: Scaling Globally (slides 52-61)",
+        "startSlide": 52
+      },
+      {
+        "label": "Module 6: Measuring Impact and Operating System (slides 62-73)",
+        "startSlide": 62
+      },
+      {
+        "label": "Final Project and Closing (slides 74-78)",
+        "startSlide": 74
+      }
+    ]
   }
 }
