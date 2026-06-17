@@ -724,5 +724,46 @@
         "startSlide": 74
       }
     ]
+  },
+  "22": {
+    "id": "selling_iqvia_ctfs",
+    "title": "Selling IQVIA CTFS",
+    "totalSlides": 64,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/aila-course-files/main/Selling-IQVIA-CTFS.pdf",
+    "firstMessage": "Welcome to Selling IQVIA CTFS. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Course Overview (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "CTFS Business Problem and Value (slides 4-16)",
+        "startSlide": 4
+      },
+      {
+        "label": "Persona-Based Selling Framework (slides 17-32)",
+        "startSlide": 17
+      },
+      {
+        "label": "AI-Enhanced Account Planning (slides 33-47)",
+        "startSlide": 33
+      },
+      {
+        "label": "Discovery and Objection Handling (slides 48-53)",
+        "startSlide": 48
+      },
+      {
+        "label": "Demo and Storytelling (slides 49-53)",
+        "startSlide": 49
+      },
+      {
+        "label": "Building Your AI Sales Teammate (slides 54-62)",
+        "startSlide": 54
+      },
+      {
+        "label": "Implementation and Coaching (slides 63-64)",
+        "startSlide": 63
+      }
+    ]
   }
 }
