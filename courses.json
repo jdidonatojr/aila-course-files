@@ -765,5 +765,38 @@
         "startSlide": 63
       }
     ]
+  },
+  "23": {
+    "id": "ai_as_your_sales_partner",
+    "title": "AI as Your Sales Partner",
+    "totalSlides": 20,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/aila-course-files/main/AI-as-Your-Sales-Partner.pdf",
+    "firstMessage": "Welcome to AI as Your Sales Partner. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Course Overview (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Core Workflow Foundations (slides 4-6)",
+        "startSlide": 4
+      },
+      {
+        "label": "Practical Skills Training (slides 7-10)",
+        "startSlide": 7
+      },
+      {
+        "label": "Building Your AI Toolkit (slides 11-14)",
+        "startSlide": 11
+      },
+      {
+        "label": "Assessment and Quality Standards (slides 15-17)",
+        "startSlide": 15
+      },
+      {
+        "label": "Implementation and Action Planning (slides 18-20)",
+        "startSlide": 18
+      }
+    ]
   }
 }
