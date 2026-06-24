@@ -831,5 +831,38 @@
         "startSlide": 18
       }
     ]
+  },
+  "25": {
+    "id": "ai_operational_audit_complete_pilot_toolkit",
+    "title": "AI Operational Audit Complete Pilot Toolkit",
+    "totalSlides": 10,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/aila-course-files/main/AI-Operational-Audit-Complete-Pilot-Toolkit.pdf",
+    "firstMessage": "Welcome to AI Operational Audit Complete Pilot Toolkit. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Kickoff Foundation (slides 3-5)",
+        "startSlide": 3
+      },
+      {
+        "label": "Discovery and Clarification (slide 6)",
+        "startSlide": 6
+      },
+      {
+        "label": "14-Day Timeline (slide 7)",
+        "startSlide": 7
+      },
+      {
+        "label": "Executive Presentation (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Implementation Roadmap (slide 10)",
+        "startSlide": 10
+      }
+    ]
   }
 }
