@@ -868,29 +868,33 @@
   "26": {
     "id": "an_introduction_to_the_clinical_trial_financial_suite",
     "title": "An Introduction to the Clinical Trial Financial Suite",
-    "totalSlides": 24,
+    "totalSlides": 47,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/aila-course-files/main/26-An-Introduction-to-the-Clinical-Trial-Financial-Suite.pdf",
     "firstMessage": "Welcome to An Introduction to the Clinical Trial Financial Suite. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Context (slides 1-3)",
+        "label": "Introduction and Problem (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "Platform Architecture and Scope (slides 4-7)",
+        "label": "CTFS Solution Overview (slides 4-10)",
         "startSlide": 4
       },
       {
-        "label": "Core Modules and Features (slides 8-13)",
-        "startSlide": 8
+        "label": "Platform Architecture and Components (slides 11-19)",
+        "startSlide": 11
       },
       {
-        "label": "End-to-End Workflow (slides 14-18)",
-        "startSlide": 14
+        "label": "Budget-to-Payment Workflow (slides 20-33)",
+        "startSlide": 20
       },
       {
-        "label": "Stakeholder Value and Implementation (slides 19-24)",
-        "startSlide": 19
+        "label": "Stakeholder Value and Positioning (slides 34-41)",
+        "startSlide": 34
+      },
+      {
+        "label": "Implementation and Adoption (slides 42-47)",
+        "startSlide": 42
       }
     ]
   }
