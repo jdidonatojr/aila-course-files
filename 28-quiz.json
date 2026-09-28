@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "AILA (Production)",
+    "subtitle": "Knowledge Check — Introduction to TypeSafe AI's Jev Platform",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "Who is the founder of TypeSafe AI and what is he known for?",
+      "choices": [
+        "Diogo Almeida, who co-invented RLHF and InstructGPT at OpenAI",
+        "Daniel Kahneman, who developed the System 1 vs System 2 framework",
+        "An unnamed team of researchers who launched in stealth mode",
+        "A group of engineers from Cloudflare and Vercel"
+      ],
+      "answer": 0,
+      "slide": 2,
+      "feedback_correct": "Exactly right—Diogo Almeida's background in training techniques at OpenAI gives him deep expertise in building better AI systems.",
+      "feedback_incorrect": "While Daniel Kahneman did inspire Jev's design philosophy, he is not the founder of TypeSafe AI. Diogo Almeida, who co-invented RLHF and InstructGPT, founded the company."
+    },
+    {
+      "question": "What are the three primitives (question types) that Jev supports?",
+      "choices": [
+        "Choice, Generation, and Reasoning",
+        "Choice, Score, and Noul",
+        "Classification, Ranking, and Probability",
+        "Text, JSON, and Binary"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Perfect—these three primitives cover all the structured decisions Jev is built to handle.",
+      "feedback_incorrect": "Jev has exactly three primitives: Choice (pick from a list), Score (place on a rubric), and Noul (return a probability). The other options describe different taxonomies that don't match Jev's actual design."
+    },
+    {
+      "question": "According to TypeSafe's reported benchmarks, how does Jev's speed and cost compare to comparable LLMs on classification tasks?",
+      "choices": [
+        "About 10x faster and 5x cheaper",
+        "Roughly equivalent in speed but slightly cheaper",
+        "Up to 193.6x faster and 444.6x cheaper",
+        "2-3x faster but significantly more expensive"
+      ],
+      "answer": 2,
+      "slide": 5,
+      "feedback_correct": "Correct—those are TypeSafe's own vendor-reported numbers, though it's always wise to evaluate claims independently.",
+      "feedback_incorrect": "TypeSafe reports much more dramatic differences than these numbers suggest. Jev is reported to be up to 193.6 times faster and 444.6 times cheaper than comparable LLMs on classification tasks."
+    },
+    {
+      "question": "What does Jev's confidence score actually measure?",
+      "choices": [
+        "Whether the answer is factually correct",
+        "How concentrated the probability distribution is across the options",
+        "The level of training data certainty for that decision",
+        "The user's trust level in the AI system"
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Exactly—confidence tells you how much uncertainty the model is expressing, not whether the answer is true.",
+      "feedback_incorrect": "Confidence does not tell you if the answer is factually correct. It reflects how concentrated the probability distribution is: high confidence means probability is concentrated on one option, low confidence means it is spread across several options."
+    },
+    {
+      "question": "Which of the following is something Jev can NOT do?",
+      "choices": [
+        "Route a customer support ticket to the right department",
+        "Generate a written customer reply",
+        "Score a support request on an urgency rubric",
+        "Return a probability distribution across multiple options"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Right—Jev cannot generate text, hold conversations, or explain its reasoning. Those tasks require an LLM.",
+      "feedback_incorrect": "Jev is built specifically for structured decisions like routing and scoring, and it can return probability distributions. What it cannot do is generate text, write replies, hold conversations, or explain its reasoning."
+    },
+    {
+      "question": "According to Kahneman's framework that inspired Jev, what kind of thinking is Jev designed for?",
+      "choices": [
+        "System 2 thinking—slow, deliberate, and reasoning-heavy",
+        "System 1 thinking—fast, automatic, and bounded decisions",
+        "Both System 1 and System 2 equally",
+        "Neither—Jev is designed for a completely different framework"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Perfect—Jev is optimized for the fast, automatic, repeated decisions that most software makes, which mirrors System 1 thinking.",
+      "feedback_incorrect": "Jev is built for System 1—fast, automatic, bounded thinking. Most software decisions are System 1 in nature, and Jev is optimized specifically for that use case."
+    },
+    {
+      "question": "What does TypeSafe guarantee with its claim of zero percent structured-output type-error rate?",
+      "choices": [
+        "That Jev's answers are always factually correct",
+        "That the answer will always match the schema you defined, though it may still be wrong",
+        "That Jev can never be confidently incorrect",
+        "That parsing Jev output will never fail"
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "Correct—type safety is structural: the answer will always fit your schema, but it can still be the wrong valid option.",
+      "feedback_incorrect": "Type safety means the answer will always match your schema—a Choice answer will be one of your listed options, a Score will be in your defined range. This is a structural guarantee, not a guarantee of correctness. Jev can still misclassify while staying well-formed."
+    },
+    {
+      "question": "In a hybrid Jev and LLM architecture, what role does Jev play?",
+      "choices": [
+        "Jev generates text responses while the LLM handles routing decisions",
+        "Jev serves as a control plane handling routing, gating, and scoring while the LLM handles open-ended generation",
+        "Jev and the LLM split language tasks—Jev does summary, LLM does detail",
+        "Jev completely replaces the LLM for most tasks"
+      ],
+      "answer": 1,
+      "slide": 16,
+      "feedback_correct": "Exactly—Jev is the fast decision layer (control plane) that routes work to the LLM, which then does the generation that requires actual language.",
+      "feedback_incorrect": "Jev is not a replacement for LLMs. It is a complementary layer that handles fast, structured decisions (routing, gating, scoring) while the LLM handles open-ended generation and reasoning that follows."
+    },
+    {
+      "question": "If you are evaluating whether a use case fits Jev, what is the plainest test you can apply?",
+      "choices": [
+        "Does the task require real-time performance?",
+        "Would this step's output eventually be parsed out of LLM text into a category, score, or yes/no anyway?",
+        "Is the task related to customer support or security?",
+        "Does the decision involve more than two possible outcomes?"
+      ],
+      "answer": 1,
+      "slide": 15,
+      "feedback_correct": "Perfect—if you are already doing the parsing work, Jev is a candidate because it does the work faster, cheaper, and without the parsing step.",
+      "feedback_incorrect": "The key test is whether the output would eventually be parsed out of LLM text into a category, score, or yes/no. If so, that step is a candidate for Jev because you are already doing the work—Jev just does it faster and cheaper."
+    },
+    {
+      "question": "In a production environment, why is it important to pin your Jev model to a specific versioned ID like jev-1.13.0 instead of using jev-latest?",
+      "choices": [
+        "It allows you to use older, more stable models",
+        "The jev-latest alias moves when TypeSafe ships a new release, and new versions can return different answers without warning, making pinned versions more consistent and auditable",
+        "Versioned models are significantly cheaper than latest",
+        "It ensures you get the absolute fastest performance"
+      ],
+      "answer": 1,
+      "slide": 19,
+      "feedback_correct": "Exactly right—pinning ensures your production behavior stays consistent and auditable, and you can test deliberately before upgrading.",
+      "feedback_incorrect": "Pinning to a specific version ensures consistency: jev-latest moves when TypeSafe releases updates, which can change behavior unexpectedly. Versioned IDs keep your production behavior stable and allow you to control when and how you upgrade."
+    }
+  ]
+}
